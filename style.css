@@ -1,0 +1,113 @@
+ /* mobile version */
+
+@media (max-width:520px){
+    .page-not-found {
+        font-family:monospace;
+       
+    }
+    .scarecrow-image {
+        margin-top:5em;
+        width: 100vw;
+        align-self: flex-start;
+    }
+    .informative-line {
+        font-size: 3rem;
+        font-family: 'Space Mono', monospace;
+        font-style: normal;
+        font-weight: bold;
+        width: 100vw;
+        padding-left: 0.2em;
+    }
+    .information {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 30%;
+        align-items: flex-start;
+        align-self: flex-start;
+    }
+    .error-paragraph {
+        font-family: 'Space Mono', monospace;
+        width: 100vw;
+        font-size: 1.3em;
+    }
+    .back-to-home-page {
+        margin: 45px 0 0 0 ;
+        padding:2em 2em 2em 2em;
+        width: 17em;
+        background-color: #262626;
+        color: white;
+        font-size: 1em;
+        font-weight: 700;
+    }
+    .end-footer { 
+        display: flex;
+        justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+        color: 	#888888;
+        margin-top: 3em;
+     }
+}
+/* tablet and desktop view */
+@media (min-width:521px){
+.main-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 80px;
+    width: 90%;
+    margin-left: 50px;
+    flex-wrap: wrap;
+}
+
+.page-not-found {
+    font-family:monospace;
+    font-size: 1rem;
+    align-self:flex-start ;
+    /* padding: 30px; */
+    margin-left: 170px ;
+    width: 17em;
+}
+
+.scarecrow-image {
+    width: 28%;
+    align-self: flex-start;
+}
+
+.information {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 25%;
+    align-items: flex-start;
+    align-self: flex-start;
+}
+.informative-line {
+    font-size: 2rem;
+    font-family: 'Space Mono', monospace;
+    font-style: normal;
+    font-weight: bold;
+    padding-top: 10px;
+    margin: 0;
+}
+.error-paragraph {
+    font-family: 'Space Mono', monospace;
+    width: 70%;
+    font-size: 0.8rem;
+    padding-top: 25px;
+}
+.back-to-home-page {
+    margin: 45px 0 0 0 ;
+    padding: 15px;
+    background-color: #262626;
+    color: white;
+    font-weight: 700;
+}
+.end-footer { 
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    color: 	#888888;
+    margin-top: 60px;
+ }
+}
