@@ -1,113 +1,149 @@
- /* mobile version */
-
-@media (max-width:520px){
-    .page-not-found {
-        font-family:monospace;
-       
-    }
-    .scarecrow-image {
-        margin-top:5em;
-        width: 100vw;
-        align-self: flex-start;
-    }
-    .informative-line {
-        font-size: 3rem;
-        font-family: 'Space Mono', monospace;
-        font-style: normal;
-        font-weight: bold;
-        width: 100vw;
-        padding-left: 0.2em;
-    }
-    .information {
-        display:flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 30%;
-        align-items: flex-start;
-        align-self: flex-start;
-    }
-    .error-paragraph {
-        font-family: 'Space Mono', monospace;
-        width: 100vw;
-        font-size: 1.3em;
-    }
-    .back-to-home-page {
-        margin: 45px 0 0 0 ;
-        padding:2em 2em 2em 2em;
-        width: 17em;
-        background-color: #262626;
-        color: white;
-        font-size: 1em;
-        font-weight: 700;
-    }
-    .end-footer { 
-        display: flex;
-        justify-content: center;
-        font-family: 'Montserrat', sans-serif;
-        color: 	#888888;
-        margin-top: 3em;
-     }
+* {
+    box-sizing: border-box;
 }
-/* tablet and desktop view */
-@media (min-width:521px){
-.main-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-top: 80px;
+
+html {
+    font-size: 16px;
+}
+
+header {
+    font-family: "Inconsolata";
+    font-size: 1.5rem;
+    align-self: flex-start;
+    padding: 48px;
+    margin: 0 auto;
     width: 90%;
-    margin-left: 50px;
-    flex-wrap: wrap;
 }
 
-.page-not-found {
-    font-family:monospace;
-    font-size: 1rem;
-    align-self:flex-start ;
-    /* padding: 30px; */
-    margin-left: 170px ;
-    width: 17em;
+.hero {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 76px auto;
+    padding: 32px 0;
 }
 
 .scarecrow-image {
-    width: 28%;
-    align-self: flex-start;
+    width: 50%;
 }
 
-.information {
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 25%;
-    align-items: flex-start;
-    align-self: flex-start;
+.scarecrow-image img {
+    width: 90%;
 }
-.informative-line {
-    font-size: 2rem;
-    font-family: 'Space Mono', monospace;
-    font-style: normal;
-    font-weight: bold;
-    padding-top: 10px;
-    margin: 0;
+
+.hero-content {
+    width: 45%;
+    font-family: "Space Mono";
 }
-.error-paragraph {
+
+.hero-content>h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 2;
+    color: #333333;
+}
+
+.hero-content>p {
     font-family: 'Space Mono', monospace;
     width: 70%;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     padding-top: 25px;
+    line-height: 1.5rem;
 }
+
 .back-to-home-page {
-    margin: 45px 0 0 0 ;
-    padding: 15px;
-    background-color: #262626;
+    font-family: "Space Mono";
+    margin: 45px 0 0 0;
+    padding: 32px 40px;
+    background-color: #333333;
     color: white;
+    border: none;
     font-weight: 700;
+    width: 40%;
 }
-.end-footer { 
+
+footer {
     display: flex;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
-    color: 	#888888;
+    color: #bdbdbd;
     margin-top: 60px;
- }
+}
+
+
+/* mobile version */
+
+@media only screen and (max-width:520px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    html {
+        font-size: 12px;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+    header>h1 {
+        font-size: 2rem;
+
+
+    }
+
+    .scarecrow-image {
+        width: 100%;
+        align-self: flex-start;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-content {
+        width: 100%;
+        align-items: flex-start;
+        align-self: flex-start;
+        margin: 40px 0;
+    }
+
+    .informative-line {
+        margin: 30px 0;
+    }
+
+    .hero-content>h2 {
+        font-size: 4rem;
+        font-family: 'Space Mono', monospace;
+        font-style: normal;
+        font-weight: bold;
+        width: 100%;
+        /* padding-left: 0.2em; */
+        line-height: 1.5;
+    }
+
+    .hero-content>p {
+        font-family: 'Space Mono', monospace;
+        width: 100%;
+        font-size: 1.6em;
+        line-height: 2.5rem;
+    }
+
+    .back-to-home-page {
+        width: 20rem;
+        background-color: #262626;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+        color: #888888;
+    }
 }
